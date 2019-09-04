@@ -21,11 +21,11 @@ const cards = [
 },
 ];
 const cardsInPlay = [];
-function checkForMatch() {
-    if (cardsInPlay[0] === cardsInPlay[1]) {
-        alert("You found a match!");
-    } else {
-        alert("Sorry,try again.");
+	function checkForMatch() {
+    	if (cardsInPlay[0] === cardsInPlay[1]) {
+        	alert("You found a match!");
+    } 	else {
+        	alert("Sorry,try again.");
     }
 }
 function flipCard() {
@@ -35,8 +35,8 @@ function flipCard() {
     console.log(cards[cardId].suit);
     console.log(cards[cardId].cardImage);
     cardsInPlay.push(cards[cardId].rank);
-    if (cardsInPlay.length===2) {
-        checkForMatch();
+    	if (cardsInPlay.length===2) {
+       	 checkForMatch();
     }
 }
 function createBoard() {
